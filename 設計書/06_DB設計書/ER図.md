@@ -11,7 +11,7 @@ skinparam class {
 }
 
 !define MASTER_MARK_COLOR Orange 
-!define TRANSACTION_MARK_COLOR SkyBlue
+!define TRANSACTION_MARK_COLOR DeepSkyBlue
 
 package "ECサイト" as target_system {
     /'
