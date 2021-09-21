@@ -10,8 +10,8 @@ skinparam class {
     ArrowColor Black
 }
 
-!define MASTER_MARK_COLOR Purple 
-!define TRANSACTION_MARK_COLOR Blue
+!define MASTER_MARK_COLOR Orange 
+!define TRANSACTION_MARK_COLOR DeepSkyBlue
 
 package "ECサイト" as target_system {
     /'
@@ -34,7 +34,7 @@ package "ECサイト" as target_system {
     entity "購入テーブル" as order <order> <<T,TRANSACTION_MARK_COLOR>> {
         + order_id [PK]
         --
-        # customer_code [FK] 
+        # customer_code [FK]
         purchase_date
         total_price
     }
