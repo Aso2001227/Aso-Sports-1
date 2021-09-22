@@ -41,7 +41,7 @@
 |削除フラグ|del_flag|int(1)||||
 |登録日|reg_date|date||○||
 
-## ランクマスタ(m_category)
+## ランクマスタ(m_rank)
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
@@ -61,3 +61,5 @@
 |商品詳細証明|detail|varchar(500)||||
 |削除フラグ|del_flag|int(11)||||
 |登録日|reg_date|date||○||
+
+## 競技テーブル(Competition
