@@ -31,14 +31,15 @@
 |address|varchar(100)||○||
 |tel|varchar(20)||○||
 |mail|varchar(100)||○||
+|rank|varchar(10)|○|○||
 |del_flag|int(1)||||
 |reg_date|date||○||
 
-## m_category
+## m_rank
 
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
-|category_id|int(11)|○|○||
+|rank|varchar(10)|○|○||
 |name|varchar(20)||○||
 |reg_date|date||○||
 
@@ -50,7 +51,6 @@
 |item_name|varchar(50)||○||
 |sports-id|varchar(30)||○|○|
 |price|int(11)||○||
-|category_id|int(11)||○|○|
 |image|varchar(200)||○||
 |detail|varchar(500)||||
 |del_flag|int(11)||||
