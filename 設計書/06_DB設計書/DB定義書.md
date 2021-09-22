@@ -37,14 +37,15 @@
 |住所|address|varchar(100)||○||
 |電話番号|tel|varchar(20)||○||
 |メールアドレス|mail|varchar(100)||○||
+|ランク|rank|varchar(10)||○|○|
 |削除フラグ|del_flag|int(1)||||
 |登録日|reg_date|date||○||
 
-## カテゴリマスタ(m_category)
+## ランクマスタ(m_category)
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|カテゴリID|category_id|int(11)|○|○||
+|ランク|rank|varchar(10)|○|○||
 |氏名|name|varchar(20)||○||
 |登録日|reg_date|date||○||
 
@@ -56,7 +57,6 @@
 |商品名|item_name|varchar(50)||○||
 |スポーツID|sports-id|varchar(30)||○|○|
 |価格|price|int(11)||○||
-|カテゴリID|category_id|int(11)||○|○|
 |画像ファイル名|image|varchar(200)||○||
 |商品詳細証明|detail|varchar(500)||||
 |削除フラグ|del_flag|int(11)||||
