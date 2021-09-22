@@ -5,6 +5,7 @@
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
 |order_id|bigint(20)|○|○||
+|sports-id|varchar(30)||○|○|
 |customer_code|varchar(50)||○|○|
 |purchase_date|date||○||
 |total_price|int(11)||○||
@@ -15,6 +16,7 @@
 |-----|--|--|--|--|
 |detail_id|bigint(20)|○|○||
 |order_id|bigint(20) |○|○|○|
+|sports-id|varchar(30)||○|○|
 |item_code|int(11)||○||
 |price|int(11)||○||
 |num|int(11)||○||
@@ -46,6 +48,7 @@
 |-----|--|--|--|--|
 |item_code|int(11)|○|○||
 |item_name|varchar(50)||○||
+|sports-id|varchar(30)||○|○|
 |price|int(11)||○||
 |category_id|int(11)||○|○|
 |image|varchar(200)||○||
