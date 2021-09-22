@@ -1,6 +1,6 @@
 # データベース設計図
 
-## d_purchase
+## t_purchase
 
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
@@ -10,7 +10,7 @@
 |purchase_date|date||○||
 |total_price|int(11)||○||
 
-## d_purchase_detail
+## t_purchase_detail
 
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
