@@ -55,3 +55,10 @@
 |detail|varchar(500)||||
 |del_flag|int(11)||||
 |reg_date|date||○||
+
+## Competition
+ 
+|項目名|型|PK|NN|FK|
+|-----|--|--|--|--|
+|sports-id|varchat(30)|○|○||
+|Competition-name|varchar(30)||○||
