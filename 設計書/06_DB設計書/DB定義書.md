@@ -65,6 +65,6 @@
 ## 競技テーブル(Competition) 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|スポーツID|sports-id|varchar(30)|-|○|○|
+|スポーツID|sports-id|varchar(30)|○|○||
 |競技名|Competition-name|varchar(30)||○||
 
