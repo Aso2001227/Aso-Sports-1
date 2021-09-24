@@ -62,8 +62,8 @@
 |登録日|reg_date|date||○||
 
 
-## 競技テーブル(Competition) |和名|属性名(カラム名)|型|PK|NN|FK|
-
+## 競技テーブル(Competition) 
+|和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 
 |スポーツID|sports-id|varchar(30)||○|○|
