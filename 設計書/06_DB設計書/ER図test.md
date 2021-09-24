@@ -84,7 +84,12 @@ order_detail    }-do-||     items
 items          }o-le-||     category
 
  
-
+entity "競技テーブル" as category <m_category> <<M,MASTER_MARK_COLOR>> {
+        + sports-id [PK]
+        --
+        Competition-name
+    }
+  
 
 @enduml
 ```
