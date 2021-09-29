@@ -1,22 +1,20 @@
 # データベース設計図
 
-## t_purchase
+## d_purchase
 
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
 |order_id|bigint(20)|○|○||
-|sports-id|varchar(30)||○|○|
 |customer_code|varchar(50)||○|○|
 |purchase_date|date||○||
 |total_price|int(11)||○||
 
-## t_purchase_detail
+## d_purchase_detail
 
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
 |detail_id|bigint(20)|○|○||
 |order_id|bigint(20) |○|○|○|
-|sports-id|varchar(30)||○|○|
 |item_code|int(11)||○||
 |price|int(11)||○||
 |num|int(11)||○||
@@ -31,15 +29,14 @@
 |address|varchar(100)||○||
 |tel|varchar(20)||○||
 |mail|varchar(100)||○||
-|rank|varchar(10)|○|○||
 |del_flag|int(1)||||
 |reg_date|date||○||
 
-## m_rank
+## m_category
 
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
-|rank|varchar(10)|○|○||
+|category_id|int(11)|○|○||
 |name|varchar(20)||○||
 |reg_date|date||○||
 
@@ -49,16 +46,9 @@
 |-----|--|--|--|--|
 |item_code|int(11)|○|○||
 |item_name|varchar(50)||○||
-|sports-id|varchar(30)||○|○|
 |price|int(11)||○||
+|category_id|int(11)||○|○|
 |image|varchar(200)||○||
 |detail|varchar(500)||||
 |del_flag|int(11)||||
 |reg_date|date||○||
-
-## Competition
- 
-|項目名|型|PK|NN|FK|
-|-----|--|--|--|--|
-|sports-id|varchat(30)|○|○||
-|Competition-name|varchar(30)||○||
