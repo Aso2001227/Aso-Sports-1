@@ -37,7 +37,7 @@
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
 |category_id|int(11)|○|○||
-|name|varchar(20)||○||
+|sports_name|varchar(20)||○||
 |reg_date|date||○||
 
 ## m_items
