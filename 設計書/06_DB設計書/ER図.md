@@ -63,7 +63,7 @@ package "ECサイト" as target_system {
     entity "カテゴリマスタ" as category <m_category> <<M,MASTER_MARK_COLOR>> {
         + category_id [PK]
         --
-        name
+        sports_name
         reg_date
     }
   }
