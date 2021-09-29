@@ -43,7 +43,7 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |カテゴリID|category_id|int(11)|○|○||
-|スポーツ名|sports|varchar(20)||○||
+|スポーツ名|sports_name|varchar(20)||○||
 |登録日|reg_date|date||○||
 
 ## 商品マスタ(m_items)
