@@ -47,7 +47,7 @@
 |item_code|int(11)|○|○||
 |item_name|varchar(50)||○||
 |price|int(11)||○||
-|category_id|ivarchar(10)||○|○|
+|category_id|varchar(10)||○|○|
 |image|varchar(200)||○||
 |detail|varchar(500)||||
 |del_flag|int(1)||||
