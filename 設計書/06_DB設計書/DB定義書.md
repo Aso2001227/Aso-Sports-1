@@ -56,5 +56,5 @@
 |カテゴリID|category_id|int(11)||○|○|
 |画像ファイル名|image|varchar(200)||○||
 |商品詳細証明|detail|varchar(500)||||
-|削除フラグ|del_flag|int(11)||||
+|削除フラグ|del_flag|int(1)||||
 |登録日|reg_date|date||○||
