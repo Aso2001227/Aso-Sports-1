@@ -1,7 +1,7 @@
 ### 画面詳細図
 ## トップページ
 ### プロトタイプは以下のリンク先
-[プロトタイプ]()
+[プロトタイプ](https://www.figma.com/file/36DPETfL3dwzP5NjNW1WZQ/Untitled)
 *****
 <img src="img/toppage.png" width="500">
 
