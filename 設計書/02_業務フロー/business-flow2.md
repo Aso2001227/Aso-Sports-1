@@ -2,4 +2,4 @@
 @startuml
 ユーザー ->Webサーバー :
 @enduml
-```uml
+```
