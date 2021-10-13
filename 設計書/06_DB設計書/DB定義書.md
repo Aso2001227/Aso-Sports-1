@@ -56,6 +56,6 @@
 |価格|price|int(11)||○||
 |カテゴリID|category_id|int(10)||○|○|
 |画像ファイル名|image|varchar(200)||○||
-|商品詳細証明|detail|varchar(500)||||
+|商品詳細|detail|varchar(500)||||
 |削除フラグ|del_flag|int(1)||||
 |登録日|reg_date|date||○||
