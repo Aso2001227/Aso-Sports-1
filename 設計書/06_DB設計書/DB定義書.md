@@ -10,7 +10,7 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|オーダーID|order_id|bigint(20)|○|○||
+|購入ID|purchase_id|bigint(20)|○|○||
 |顧客コード|customer_code|varchar(50)||○|○|
 |購入日|purchase_date|date||○||
 |総額|total_price|int(11)||○||
@@ -20,7 +20,7 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |オーダー詳細ID|detail_id|bigint(20)|○|○||
-|オーダーID|order_id|bigint(20) |○|○|○|
+|購入ID|purchase_id|bigint(20) |○|○|○|
 |商品コード|item_code|int(11)||○||
 |価格|price|int(11)||○||
 |数量|num|int(11)||○||
@@ -43,6 +43,7 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |カテゴリID|category_id|int(10)|○|○||
+|親カテゴリ|parent-category|varchar(30)|||
 |スポーツ名|sports_name|varchar(20)||○||
 |登録日|reg_date|date||○||
 
@@ -53,7 +54,7 @@
 |商品コード|item_code|int(11)|○|○||
 |商品名|item_name|varchar(50)||○||
 |価格|price|int(11)||○||
-|カテゴリID|category_id|varchar(10)||○|○|
+|カテゴリID|category_id|int(10)||○|○|
 |画像ファイル名|image|varchar(200)||○||
 |商品詳細証明|detail|varchar(500)||||
 |削除フラグ|del_flag|int(1)||||
