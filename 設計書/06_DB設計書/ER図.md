@@ -40,7 +40,7 @@ package "ECサイト" as target_system {
     }
     
     entity "購入詳細テーブル" as order_detail  <order_detail> <<T,TRANSACTION_MARK_COLOR>> {
-        + detail_id[PK]
+        + order_detail_id[PK]
         + order_id[PK]
         --
         # item_code [FK]
@@ -63,6 +63,7 @@ package "ECサイト" as target_system {
     entity "カテゴリマスタ" as category <m_category> <<M,MASTER_MARK_COLOR>> {
         + category_id [PK]
         --
+        parent_category
         sports_name
         reg_date
     }
