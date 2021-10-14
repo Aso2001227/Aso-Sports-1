@@ -19,7 +19,7 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|オーダー詳細ID|order_detail_id|bigint(20)|○|○||
+|購入詳細ID|purchase_detail_id|bigint(20)|○|○||
 |購入ID|purchase_id|bigint(20) |○|○|○|
 |商品コード|item_code|int(11)||○||
 |価格|price|int(11)||○||
