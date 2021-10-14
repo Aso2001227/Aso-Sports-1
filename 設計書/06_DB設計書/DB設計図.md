@@ -13,7 +13,7 @@
 
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
-|order_detail_id|bigint(20)|○|○||
+|purchase_detail_id|bigint(20)|○|○||
 |purchase_id|bigint(20) |○|○|○|
 |item_code|int(11)||○||
 |price|int(11)||○||
