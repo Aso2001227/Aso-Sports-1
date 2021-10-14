@@ -11,7 +11,7 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |購入ID|purchase_id|bigint(20)|○|○||
-|顧客コード|customer_code|varchar(50)||○|○|
+|顧客コード|customer_code|int(50)||○|○|
 |購入日|purchase_date|date||○||
 |総額|total_price|int(11)||○||
 
@@ -19,7 +19,7 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|オーダー詳細ID|detail_id|bigint(20)|○|○||
+|オーダー詳細ID|order_detail_id|bigint(20)|○|○||
 |購入ID|purchase_id|bigint(20) |○|○|○|
 |商品コード|item_code|int(11)||○||
 |価格|price|int(11)||○||
