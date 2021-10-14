@@ -5,7 +5,7 @@
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
 |purchase_id|bigint(20)|○|○||
-|customer_code|varchar(50)||○|○|
+|customer_code|int(50)||○|○|
 |purchase_date|date||○||
 |total_price|int(11)||○||
 
@@ -23,7 +23,7 @@
 
 |項目名|型|PK|NN|FK|
 |-----|--|--|--|--|
-|customer_code|varchar(50)|○|○||
+|customer_code|int(50)|○|○||
 |pass|varchar(50)||○||
 |name|varchar(20)||○||
 |address|varchar(100)||○||
