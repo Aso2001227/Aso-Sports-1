@@ -24,6 +24,7 @@ package "ECサイト" as target_system {
         --
         pass
         name
+        post_number
         address
         tel
         mail
@@ -64,7 +65,7 @@ package "ECサイト" as target_system {
         + category_id [PK]
         --
         parent_category
-        sports_name
+        category_name
         reg_date
     }
   }
