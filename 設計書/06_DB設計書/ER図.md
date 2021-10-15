@@ -55,6 +55,9 @@ package "ECサイト" as target_system {
         item_name
         price
         # category_id [FK]
+        weight
+        color
+        material
         image
         detail
         del_flag
