@@ -26,6 +26,7 @@
 |customer_code|int(50)|○|○||
 |pass|varchar(50)||○||
 |name|varchar(20)||○||
+|post_number|int(7)||○||
 |address|varchar(100)||○||
 |tel|varchar(20)||○||
 |mail|varchar(100)||○||
