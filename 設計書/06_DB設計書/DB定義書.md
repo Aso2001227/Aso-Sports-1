@@ -12,7 +12,7 @@
 |---|-----|--|--|--|--|
 |購入ID|purchase_id|bigint(20)|○|○||
 |顧客コード|customer_code|int(50)||○|○|
-|購入日|purchase_date|date||○||
+|購入日|purchase_date|time||○||
 |総額|total_price|int(11)||○||
 
 ## 購入詳細テーブル(t_purchase_detail)
