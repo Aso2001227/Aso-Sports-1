@@ -50,6 +50,9 @@
 |item_name|varchar(50)||○||
 |price|int(11)||○||
 |category_id|varchar(10)||○|○|
+|weight|int(4)||○||
+|color|varchar(20)||||
+|material|varchar(30)||||
 |image|varchar(200)||○||
 |detail|varchar(500)||||
 |del_flag|int(1)||||
