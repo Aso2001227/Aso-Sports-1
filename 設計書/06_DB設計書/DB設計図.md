@@ -6,7 +6,7 @@
 |-----|--|--|--|--|
 |purchase_id|bigint(20)|○|○||
 |customer_code|int(50)||○|○|
-|purchase_date|date||○||
+|purchase_date|time||○|||
 |total_price|int(11)||○||
 
 ## t_purchase_detail
