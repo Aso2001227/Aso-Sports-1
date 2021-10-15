@@ -32,6 +32,7 @@
 |顧客コード|customer_code|int(50)|○|○||
 |パスワード|pass|varchar(50)||○||
 |氏名|name|varchar(20)||○||
+|郵便番号|post_number|int(7)||○||
 |住所|address|varchar(100)||○||
 |電話番号|tel|varchar(20)||○||
 |メールアドレス|mail|varchar(100)||○||
