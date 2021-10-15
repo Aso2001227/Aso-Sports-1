@@ -56,6 +56,9 @@
 |商品名|item_name|varchar(50)||○||
 |価格|price|int(11)||○||
 |カテゴリID|category_id|int(10)||○|○|
+|重さ|weight|int(4)||○||
+|色|color|varchar(20)||||
+|素材|material|varchar(30)||||
 |画像ファイル名|image|varchar(200)||○||
 |商品詳細|detail|varchar(500)||||
 |削除フラグ|del_flag|int(1)||||
