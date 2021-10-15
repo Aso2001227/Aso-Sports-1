@@ -3,7 +3,7 @@
 ### プロトタイプは以下のリンク先
 [プロトタイプ](https://www.figma.com/file/36DPETfL3dwzP5NjNW1WZQ/Untitled?node-id=0%3A1)
 *****
-<img src="itiran.png" width="500">
+<img src="Product-list.png" width="500">
 
 *****
 
