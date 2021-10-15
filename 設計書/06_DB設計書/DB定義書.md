@@ -43,8 +43,8 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |カテゴリID|category_id|int(10)|○|○||
-|親カテゴリ|parent_category|varchar(30)||○|
-|スポーツ名|sports_name|varchar(20)||○||
+|親カテゴリ|parent_category|int(30)||○|
+|カテゴリ名|category_name|varchar(20)||○||
 |登録日|reg_date|date||○||
 
 ## 商品マスタ(m_items)
