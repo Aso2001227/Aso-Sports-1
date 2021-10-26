@@ -49,7 +49,7 @@
 |item_code|int(11)|○|○||
 |item_name|varchar(50)||○||
 |price|int(11)||○||
-|category_id|varchar(10)||○|○|
+|category_id|int(10)||○|○|
 |weight|int(4)||○||
 |color|varchar(20)||||
 |material|varchar(30)||||
