@@ -1,5 +1,5 @@
 ### 画面詳細図
-## トップページ
+## ログアウト
 ### プロトタイプは以下のリンク先
 [プロトタイプ](https://www.figma.com/file/36DPETfL3dwzP5NjNW1WZQ/Untitled)
 *****
