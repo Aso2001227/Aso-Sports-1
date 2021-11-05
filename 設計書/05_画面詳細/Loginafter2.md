@@ -1,9 +1,9 @@
 ### 画面詳細図
-## ログイン後１
+## ログイン失敗
 ### プロトタイプは以下のリンク先
 [プロトタイプ](https://www.figma.com/file/36DPETfL3dwzP5NjNW1WZQ/Untitled)
 *****
-<img src="img/loginafter.png" width="500">
+<img src="img/loginafter2.png" width="500">
 
 *****
 
