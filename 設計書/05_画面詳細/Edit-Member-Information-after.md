@@ -1,9 +1,9 @@
 ### 画面詳細図
-## 会員情報編集
+## 会員情報編集後
 ### プロトタイプは以下のリンク先
 [プロトタイプ](https://www.figma.com/file/36DPETfL3dwzP5NjNW1WZQ/Untitled)
 *****
-<img src="img/Edit-Member-Information.png" width="500">
+<img src="img/Edit-Member-Information-after.png" width="500">
 
 *****
 
