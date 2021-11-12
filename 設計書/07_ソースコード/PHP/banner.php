@@ -4,3 +4,4 @@
     <p><h6 class="sub_title">スポーツ用品:アソウスポーツ</h6></p>
     <a href="TopPage.php"><button type="button" name="top_page">トップページ</button></a>
 </header>
+<body>
