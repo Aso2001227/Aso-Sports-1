@@ -58,6 +58,7 @@
 |カテゴリID|category_id|int(10)||○|○|
 |重さ|weight|int(4)||○||
 |色|color|varchar(20)||||
+|サイズ|size|int(4)||||
 |素材|material|varchar(30)||||
 |画像ファイル名|image|varchar(200)||○||
 |削除フラグ|del_flag|int(1)||||
