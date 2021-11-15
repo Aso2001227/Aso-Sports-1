@@ -52,6 +52,7 @@
 |category_id|int(10)||○|○|
 |weight|int(4)||○||
 |color|varchar(20)||||
+|size|int(4)||||
 |material|varchar(30)||||
 |image|varchar(200)||○||
 |del_flag|int(1)||||
