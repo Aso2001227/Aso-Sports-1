@@ -59,7 +59,6 @@ package "ECサイト" as target_system {
         color
         material
         image
-        detail
         del_flag
         reg_date
     }
