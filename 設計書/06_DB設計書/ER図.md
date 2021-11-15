@@ -57,6 +57,7 @@ package "ECサイト" as target_system {
         # category_id [FK]
         weight
         color
+        size
         material
         image
         del_flag
