@@ -60,6 +60,5 @@
 |色|color|varchar(20)||||
 |素材|material|varchar(30)||||
 |画像ファイル名|image|varchar(200)||○||
-|商品詳細|detail|varchar(500)||||
 |削除フラグ|del_flag|int(1)||||
 |登録日|reg_date|date||○||
