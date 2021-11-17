@@ -12,7 +12,7 @@
 |---|-----|--|--|--|--|
 |購入ID|purchase_id|bigint(20)|○|○||
 |顧客コード|customer_code|int(50)||○|○|
-|購入日|purchase_date|time||○||
+|購入日|purchase_date|datetime||○||
 |総額|total_price|int(11)||○||
 
 ## 購入詳細テーブル(t_purchase_detail)
@@ -37,7 +37,7 @@
 |電話番号|tel|varchar(20)||○||
 |メールアドレス|mail|varchar(100)||○||
 |削除フラグ|del_flag|int(1)||||
-|登録日|reg_date|date||○||
+|登録日|reg_date|datetime||○||
 
 ## カテゴリマスタ(m_category)
 
@@ -46,7 +46,7 @@
 |カテゴリID|category_id|int(10)|○|○||
 |親カテゴリ|parent_category|int(30)||○|
 |カテゴリ名|category_name|varchar(20)||○||
-|登録日|reg_date|date||○||
+|登録日|reg_date|datetime||○||
 
 ## 商品マスタ(m_items)
 
