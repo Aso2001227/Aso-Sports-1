@@ -6,7 +6,7 @@
 |-----|--|--|--|--|
 |purchase_id|bigint(20)|○|○||
 |customer_code|int(50)||○|○|
-|purchase_date|time||○|||
+|purchase_date|datetime||○|||
 |total_price|int(11)||○||
 
 ## t_purchase_detail
@@ -31,7 +31,7 @@
 |tel|varchar(20)||○||
 |mail|varchar(100)||○||
 |del_flag|int(1)||||
-|reg_date|date||○||
+|reg_date|datetime||○||
 
 ## m_category
 
@@ -40,7 +40,7 @@
 |category_id|int(10)|○|○||
 |parent_category|int(30)||○||
 |category_name|varchar(20)||○||
-|reg_date|date||○||
+|reg_date|datetime||○||
 
 ## m_items
 
