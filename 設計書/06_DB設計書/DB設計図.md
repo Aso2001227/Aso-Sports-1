@@ -56,4 +56,4 @@
 |material|varchar(30)||||
 |image|varchar(200)||○||
 |del_flag|int(1)||||
-|reg_date|date||○||
+|reg_date|datetime||○||
