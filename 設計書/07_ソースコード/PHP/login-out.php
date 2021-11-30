@@ -2,13 +2,12 @@
 <?php require 'header.php';?>
     <title>ログイン</title>
 <?php require 'banner.php';?>
+<?php require 'DB_Manager.php'; $pdo=getDB();?>
+
     <p><h2>ログイン</h2></p>
     <div class="log">
         <?php
         unset($_SESSION['customer']);
-        $pdo=new PDO('mysql:host=mysql146.phy.lolipop.lan; 
-        dbname=LAA1291147-system;charset=utf8',
-            'LAA1291147','abcc0106');
         $sql=$pdo->prepare('select * from m_customers where mail=? and pass=?');
         $sql->execute([$_REQUEST['mail'],$_REQUEST['pass']]);
         foreach ($sql as $row) {
@@ -20,11 +19,11 @@
         if (isset($_SESSION['customer'])) {
             echo '<h3>ログインしました</h3>';
             echo '<p>ようこそ', $_SESSION['customer']['name'], '様ようこそ！</p>';
-            echo '<a href="TopPage.php">トップページへ戻ります。</a>';
+            echo '<p><a href="TopPage.php">トップページへ戻ります。</a></p>';
         } else {
             echo '<h3>ログイン失敗しました　</h3>';
             echo '<p>（メールアドレスかパスワードが間違っています）</p>';
-            echo '<a href="login.php">ログイン画面に戻ります。</a>';
+            echo '<p><a href="login.php">ログイン画面に戻ります。</a></p>';
         }
         ?>
     </div>

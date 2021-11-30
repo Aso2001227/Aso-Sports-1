@@ -1,17 +1,18 @@
-<?php require 'header.php';?>
-<title>ログアウト</title>
-<?php require 'banner.php';?>
-<div id="log">
 <?php
 session_start();
 $_SESSION = array();
 if (isset($_COOKIE['PHPSESSID'])) {
     setcookie('PHPSESSID','', time() - 1800,'/');
-    echo 'ログアウトしました';
 }
 session_destroy();
-
-echo '<a href="TopPage.php">トップページへ戻ります。</a>';
 ?>
+<?php require 'header.php';?>
+<title>ログアウト</title>
+<?php require 'banner.php';?>
+<div class="log">
+    <?php
+     echo '<h3>ログアウトしました</h3>';
+    echo '<p><a href="TopPage.php">トップページへ戻ります。</a></p>';
+    ?>
 </div>
 <?php require 'footer.php';?>
