@@ -30,6 +30,7 @@ package "ECサイト" as target_system {
         mail
         del_flag
         reg_date
+        Manage_flag
     }
     
     entity "購入テーブル" as purchase <t_purchase> <<T,TRANSACTION_MARK_COLOR>> {
