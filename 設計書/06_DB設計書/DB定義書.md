@@ -38,6 +38,7 @@
 |メールアドレス|mail|varchar(100)||○||
 |削除フラグ|del_flag|int(1)||||
 |登録日|reg_date|datetime||○||
+|管理者フラグ|Manage_flag|int(1)||○||
 
 ## カテゴリマスタ(m_category)
 
