@@ -32,6 +32,7 @@
 |mail|varchar(100)||○||
 |del_flag|int(1)||||
 |reg_date|datetime||○||
+|Manage_flag|int(1)||○||
 
 ## m_category
 
