@@ -1,24 +1,24 @@
 <?php session_start(); ?>
 <?php require 'header.php';?>
-<title>Product-list</title>
+    <title>Product-list</title>
 <?php require 'banner.php';?>
 <?php $item_array=array(
-        1=>"",
-        2=>"",
-        3=>"",
-        4=>""
+    1=>"",
+    2=>"",
+    3=>"",
+    4=>""
 );
 ?>
-<h2>軟式バット</h2>
-<div class="product">
+    <h2>レガース</h2>
+    <div class="product">
 <?php
 require_once 'DB_Manager.php';
 try{
-$pdo=getDB();
-$sql=$pdo->prepare('select image,item_name,price,category_id from m_items where item_code IN(1,2,3,4)');
-$sql->execute();
-$resultList=$sql->fetchAll(PDO::FETCH_ASSOC);
-$num=1;
+    $pdo=getDB();
+    $sql=$pdo->prepare('select image,item_name,price,category_id from m_items where item_code IN(86,87,88,89)');
+    $sql->execute();
+    $resultList=$sql->fetchAll(PDO::FETCH_ASSOC);
+    $num=1;
     foreach ($resultList as $item) {
         $category_id[$num]=$item['category_id'];
         echo '<div class="product',$num,'">';

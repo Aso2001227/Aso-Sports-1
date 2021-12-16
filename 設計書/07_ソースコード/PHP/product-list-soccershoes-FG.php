@@ -1,24 +1,24 @@
 <?php session_start(); ?>
 <?php require 'header.php';?>
-<title>Product-list</title>
+    <title>Product-list</title>
 <?php require 'banner.php';?>
 <?php $item_array=array(
-        1=>"",
-        2=>"",
-        3=>"",
-        4=>""
+    1=>"",
+    2=>"",
+    3=>"",
+    4=>""
 );
 ?>
-<h2>軟式バット</h2>
-<div class="product">
+    <h2>スパイク（FG）</h2>
+    <div class="product">
 <?php
 require_once 'DB_Manager.php';
 try{
-$pdo=getDB();
-$sql=$pdo->prepare('select image,item_name,price,category_id from m_items where item_code IN(1,2,3,4)');
-$sql->execute();
-$resultList=$sql->fetchAll(PDO::FETCH_ASSOC);
-$num=1;
+    $pdo=getDB();
+    $sql=$pdo->prepare('select image,item_name,price,category_id from m_items where item_code IN(30,37,44,51)');
+    $sql->execute();
+    $resultList=$sql->fetchAll(PDO::FETCH_ASSOC);
+    $num=1;
     foreach ($resultList as $item) {
         $category_id[$num]=$item['category_id'];
         echo '<div class="product',$num,'">';
@@ -28,7 +28,11 @@ $num=1;
         echo '<a href="product.php?item_name=',$item_array[$num],'" id="white">';
         echo '<p>',$item['item_name'],'</p>';
         echo '</a>';
-
+        echo '<p>サイズ:<select name="size',$num,'">';
+        for($j=240;$j<=270;$j+=5){
+            echo '<option value = "',$j,'">',$j/10,'cm</option>';
+        }
+        echo '</select></p>';
         echo '<p>￥',$item['price'],'(税込)/1本</p>';
         echo '</div>';
         echo '<div class="num">';

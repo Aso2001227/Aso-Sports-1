@@ -6,6 +6,6 @@
         <h6 class="sub_title">スポーツ用品:アソウスポーツ</h6>
     </div>
     <div class="button">
-        <a href="TopPage.php"><button type="button" name="top_page">トップページ</button></a>
+        <a href="http://aso2001195.perma.jp/test2/TopPage.php"><button type="button" name="top_page">トップページ</button></a>
     </div>
 </div>

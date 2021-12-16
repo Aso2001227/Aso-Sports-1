@@ -13,13 +13,19 @@
         foreach ($sql as $row) {
             $_SESSION['customer'] = [
                 'customer_code' => $row['customer_code'], 'pass' => $row['pass'], 'name' => $row['name'], 'post_number' => $row['post_number'], 'address' => $row['address'],
-                'tel' => $row['tel'], 'mail' => $row['mail'], 'del_flag' => $row['del_flag'], 'reg_date' => $row['reg_date']
+                'tel' => $row['tel'], 'mail' => $row['mail'], 'del_flag' => $row['del_flag'], 'reg_date' => $row['reg_date'],'Manage_flag'=>$row['Manage_flag']
             ];
         }
         if (isset($_SESSION['customer'])) {
-            echo '<h3>ログインしました</h3>';
-            echo '<p>ようこそ', $_SESSION['customer']['name'], '様ようこそ！</p>';
-            echo '<p><a href="TopPage.php">トップページへ戻ります。</a></p>';
+            if($_SESSION['customer']['Manage_flag']==0) {
+                echo '<h3>ログインしました</h3>';
+                echo '<p>', $_SESSION['customer']['name'], '様ようこそ！</p>';
+                echo '<p><a href="TopPage.php">トップページへ戻ります。</a></p>';
+            }else{
+                echo '<h3>管理者でログインしました</h3>';
+                echo '<p>', $_SESSION['customer']['name'], 'ようこそ！</p>';
+                echo '<p><a href="TopPage.php">トップページへ戻ります。</a></p>';
+            }
         } else {
             echo '<h3>ログイン失敗しました　</h3>';
             echo '<p>（メールアドレスかパスワードが間違っています）</p>';

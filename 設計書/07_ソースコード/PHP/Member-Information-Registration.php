@@ -12,7 +12,7 @@
     }
 </script>
 <?php require 'banner.php'?>
-<h1>会員情報登録</h1>
+<h2 id="center">会員情報登録</h2>
 <div class="information">
     <form action="Member-Information-Registration-out.php" method="post" name="registration">
         <p>お名前<br>

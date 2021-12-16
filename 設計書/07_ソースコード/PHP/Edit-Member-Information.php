@@ -3,17 +3,33 @@
     <title>会員情報編集</title>
     <script type="text/javascript">
         function check(){
-            if(edit.verification_pass.value===edit.new_pass.value){
-                return true;
+            const chk=pass();
+            if(chk){
+                if (edit.verification_pass.value !== edit.new_pass.value) {
+                    alert("パスワードが確認用パスワードと一致していません");
+                    return false;
+                } else {
+                    return true;
+                }
             }else{
-                alert("パスワードが確認用パスワードと一致していません");
+                alert("現在のパスワードが違います");
                 return false;
             }
         }
+
+        function pass(){
+            let chk=false;
+            const sess=<?php echo json_encode($_SESSION['customer']['pass'],JSON_UNESCAPED_UNICODE)?>;
+            console.log(sess);
+            if(edit.pass.value==sess){
+                chk=true;
+            }
+            return chk;
+        }
     </script>
 <?php require 'banner.php';?>
-    <h2>会員情報編集</h2>
-    <h3>(変更がない場合は、現在登録されている情報をお書きください。)</h3>
+    <h2 id="center">会員情報編集</h2>
+    <h3 id="center">(変更がない場合は、現在登録されている情報をお書きください。)</h3>
     <div class="information">
         <?php
         if(isset($_SESSION['customer'])) {
